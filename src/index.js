@@ -36,7 +36,7 @@ async function onSearchForm(event) {
 
   let array = await fetchImages(options);
   let data = renderGallery(array.hits);
-  if ((data.length = 0)) {
+  if (data.length === 0) {
     Notiflix.Notify.failure(
       'Sorry, there are no images matching your search query. Please try again.'
     );
