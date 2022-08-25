@@ -93,7 +93,7 @@ async function onScroll() {
     options.page++;
 
     if (options.page < options.totalPage) {
-      array = await fetchImages(options);
+      let array = await fetchImages(options);
       let data = renderGallery(array.hits);
       if ((data.length = 0)) {
         Notiflix.Notify.failure(
