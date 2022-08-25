@@ -17,13 +17,3 @@ export const options = {
   limit: 16,
   totalPage: 1,
 };
-// fetchImages('cat', 2, 19);
-
-// const renderMarkUp = async () => {
-//   try {
-//     const images = await fetchImages();
-//     return images.map(i => {
-//       return `<h1>${i}</h1>`;
-//     });
-//   } catch {}
-// };

@@ -22,7 +22,6 @@ let msnry = new Masonry('.gallery', {
 });
 
 searchForm.addEventListener('submit', onSearchForm);
-// loadNextGallery.addEventListener('click', onLoadGallaryBtn);
 
 async function onSearchForm(event) {
   event.preventDefault();
