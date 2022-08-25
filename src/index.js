@@ -34,7 +34,7 @@ async function onSearchForm(event) {
   options.query = valueInput;
   options.page = 1;
 
-  array = await fetchImages(options);
+  let array = await fetchImages(options);
   let data = renderGallery(array.hits);
   if ((data.length = 0)) {
     Notiflix.Notify.failure(
